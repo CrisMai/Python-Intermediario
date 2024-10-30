@@ -1,0 +1,40 @@
+
+1- Funções (def) em Python
+
+
+Em Python, uma função é um bloco de código que executa uma tarefa específica e pode ser reutilizado 
+em diferentes partes de um programa. 
+A criação de uma função em Python é feita com a palavra-chave def. 
+Funções ajudam a organizar o código, evitam a reprodução lógica e facilitam a manutenção.
+
+Sintaxe de uma Função com def:
+
+A estrutura básica para criar uma função em Python é:
+
+def nome_da_funcao(parametros):
+    """Docstring opcional para descrever a função"""
+    bloco_de_codigo
+    return valor_de_retorno  # Opcional
+
+  
+- def: Defina uma função.
+- nome_da_funcao: O nome que você escolhe para a função. Deve seguir as regras de nomenclatura de variáveis.
+- parametros: Parâmetros (ou argumentos) que a função recebe. Eles são questionáveis ​​e podem ser um ou mais.
+- bloco_de_codigo: O código que será executado sempre que a função de chamada.
+- return: Define o valor que a função vai retornar. Isso é opcional e, se omitido, a função retornará None.
+
+
+Parâmetros e Argumentos:
+
+- Parâmetros são variáveis ​​definidas entre parênteses na criação da função. Eles servem como 
+“espaços reservados” para receber valores.
+- Argumentos são os valores reais passados ​​à função quando ela é chamada.
+
+
+
+
+
+
+
+
+
