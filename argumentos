@@ -1,0 +1,41 @@
+
+2 - Argumentos Posicionais e Argumentos Nomeados
+
+Em Python, argumentos nomeados e argumentos posicionais referem-se às maneiras como você passa 
+valores para os parâmetros de uma função.
+
+* Argumentos Posicionais (não nomeados)
+
+Argumentos posicionais são passados ​​para uma função com base na ordem dos parâmetros definidos na função. 
+A posição do argumento na chamada da função determina a qual parâmetro ele será atribuído.
+São úteis para chamadas de função onde a ordem dos valores é intuitiva e fácil de lembrar.
+
+Exemplo de Argumentos Posicionais:
+
+def apresentar(nome, idade):
+    print(f"Nome: {nome}, Idade: {idade}")
+
+# Chamando a função com argumentos posicionais:
+apresentar("Alice", 30)  # Nome: Alice, Idade: 30
+
+Neste exemplo, o primeiro argumento ( "Alice") é atribuído a nome, e o segundo ( 30) é atribuído a idade, 
+pois essa é a ordem das parâmetros na definição da função.
+
+
+* Argumentos Nomeados
+
+Argumentos nomeados são passados ​​especificando o nome do parâmetro ao qual o valor deve ser atribuído. 
+Isso permite que você passe os argumentos em qualquer ordem, pois cada valor é associado diretamente a 
+um parâmetro específico.
+São vantajosos para funções com muitas restrições ou restrições adicionais.
+
+Exemplo de Argumentos Nomeados:
+
+def apresentar(nome, idade):
+    print(f"Nome: {nome}, Idade: {idade}")
+
+# Chamando a função com argumentos nomeados:
+apresentar(idade=30, nome="Alice")  # Nome: Alice, Idade: 30
+
+Neste caso, idade é explicitamente associado a 30 e nomea "Alice", independentemente da ordem em que 
+foram passados. Isso torna o código mais claro e permite maior flexibilidade ao chamar a função.
