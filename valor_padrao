@@ -1,0 +1,31 @@
+
+3 - Valores padrão para parâmetros em funções Python + NoneType e None
+
+Em Python, você pode definir valores padrão para configurações de uma função, permitindo que certas 
+configurações assumam um valor específico caso não sejam fornecidas durante a chamada da função.
+
+- Valores Padrão para Parâmetros
+
+Ao definir uma função, você pode definir valores padrão às configurações diretamente na definição. Ex:
+
+def saudacao(nome="Visitante"):
+    print(f"Olá, {nome}!")
+
+saudacao()             # Saída: Olá, Visitante!
+
+Aqui, se nenhum argumento for passado para nome ao chamar saudacao(), o valor padrão "Visitante"será usado. Isso facilita a criação de funções flexíveis e com comportamento predefinido.
+
+
+- Uso de None como Valor Padrão
+
+Em muitos casos, usa-se None como valor padrão para indicar a ausência de um valor. 
+None é um valor especial em Python do tipo NoneType, que representa “nada” ou “nenhum valor”. 
+Usar None como valor padrão pode ser útil para verificar se um argumento foi passado ou não, 
+especialmente em casos onde o valor real pode ser computado dentro da função.
+
+- NoneType e None
+
+None: Representa a ausência de um valor e é frequentemente usado para sinalizar que uma variável 
+está vazia ou que uma função não retorna nada.
+NoneType: O tipo de dados de None. Em Python, None é o único valor de NoneType, e ele indica 
+explicitamente a falta de um valor real.
