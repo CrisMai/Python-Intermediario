@@ -1,0 +1,36 @@
+
+4 - Escopo de funções e módulos em Python + global
+
+Em Python, o escopo refere-se ao contexto em que variáveis ​​e nomes são visíveis e acessíveis. 
+O entendimento do escopo é importante para saber onde uma variável pode ser usada e modificada em 
+um programa. 
+Existem diferentes tipos de escopos que influenciam a visibilidade e a vida útil de variáveis ​​em funções 
+e módulos.
+
+* Tipos de Escopo em Python
+
+- Escopo Local:
+
+As variáveis ​​definidas dentro de uma função são consideradas de escopo local . 
+Eles são acessíveis apenas dentro desta função e não podem ser referenciados fora dela.
+
+
+- Escopo Global:
+
+As variáveis ​​definidas fora de qualquer função ou bloco de código têm escopo global e podem ser 
+acessadas por qualquer parte do programa, incluindo dentro de funções.
+
+
+- Escopo de Módulo:
+
+Um módulo em Python é um arquivo que contém definições e instruções. 
+As variáveis ​​e funções definidas no nível superior de um módulo têm escopo de módulo. 
+Elas podem ser acessadas por outras partes do programa quando o módulo é importado.
+
+
+- Palavra-chave global:
+
+A palavra-chave global é usada para declarar que uma variável dentro de uma função é uma variável global. 
+Isso permite que você modifique uma variável definida fora da função.
+Quando usar global :
+Quando você precisa modificar uma variável global dentro de uma função.
