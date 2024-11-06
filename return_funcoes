@@ -1,0 +1,21 @@
+
+5 - Retorno de valores das funções (return)
+
+A instrução return é um componente vital nas funções do Python que permite que uma função 
+devolva um valor ao chamador, tornando o código mais modular e funcional. 
+O uso de proteção de return ajuda a criar funções que não apenas realizam uma tarefa, mas também 
+fornece resultados para uso posterior.
+
+Se return for usado sem um valor, ou se for omitido, a função retornará None por padrão.
+
+
+- Características do return:
+
+Interrompe a Execução : Uma vez que return é executada, a função termina. Qualquer código após return 
+a função não será executado.
+
+Retorna Qualquer Tipo de Valor : Pode retornar qualquer tipo de objeto, incluindo números, strings, listas,
+dicionários, objetos personalizados e até outras funções.
+
+Múltiplos Valores : Python permite que uma função retorne vários valores separados por vírgulas. 
+Esses valores são retornados como uma tupla.
