@@ -1,0 +1,28 @@
+
+6 - Higher Order Functions - funções de primeira classe
+
+Em Python, funções de ordem superior (Higher Order Functions) e funções de primeira classe são 
+conceitos fundamentais que permitem tratar funções como objetos, proporcionando um alto nível de 
+flexibilidade e abstração no código.
+
+* Funções de Primeira Classe:
+
+O conceito de funções de primeira classe significa que, em Python, funções são tratadas como cidadãos 
+de primeira classe. São funções que podem ser tratadas como qualquer outro objeto, permitindo atribuição 
+a variáveis, passagem como argumento e retorno por outras funções.
+Isso implica que elas podem ser:
+
+Atribuídas a variáveis.
+Passadas como argumentos para outras funções.
+Retornadas por outras funções.
+Armazenadas em estruturas de dados, como listas e dicionários.
+
+Em Python, as funções são objetos como qualquer outro tipo (strings, inteiros, listas etc.).
+
+Exemplo de Função de Primeira Classe:
+
+def saudacao(nome):
+    return f"Olá, {nome}!"
+
+mensagem = saudacao  # Atribuindo a função a uma variável
+print(mensagem("Mundo"))  # Saída: Olá, Mundo!
