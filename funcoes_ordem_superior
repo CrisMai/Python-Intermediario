@@ -1,0 +1,29 @@
+
+7 - Higher Order Functions - funções de ordem superior
+
+Funções de ordem superior são funções que podem fazer uma ou mais das seguintes operações:
+
+Receber uma ou mais funções como argumento.
+Retornar uma função como resultado.
+Essas funções permitem a construção de abstrações mais complexas e expressivas, facilitando a 
+criação de funções reutilizáveis e a composição de comportamentos.
+
+Exemplos Comuns de Funções de Ordem Superior:
+
+map(): Aplica uma função a cada item de um iterável e retorna um iterador com os resultados.
+filter(): Aplica uma função a cada item de um iterável e retorna apenas os itens para os quais a função 
+retorna True.
+sorted(): Pode aceitar uma função como argumento key para ordenar com base em critérios específicos.
+
+
+Exemplo com map() e filter():
+
+numeros = [1, 2, 3, 4, 5]
+
+# Usando map para dobrar os números
+dobrados = map(lambda x: x * 2, numeros)
+print(list(dobrados))  # Saída: [2, 4, 6, 8, 10]
+
+# Usando filter para obter números pares
+pares = filter(lambda x: x % 2 == 0, numeros)
+print(list(pares))  # Saída: [2, 4]
