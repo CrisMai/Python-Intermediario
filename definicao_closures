@@ -1,0 +1,39 @@
+
+8 - Closures
+
+Uma closure ocorre quando uma função é definida dentro de outra função e a função interna "lembra" 
+do escopo no qual foi criada, mesmo depois que a função externa já terminou sua execução. 
+Essa característica permite que a função interna acesse variáveis da função externa mesmo quando 
+chamada fora do escopo dessa função.
+
+Em outras palavras, uma closure é uma função que captura variáveis do ambiente em que foi criada. 
+Isso é útil quando se deseja criar funções personalizadas que mantêm um estado entre chamadas.
+
+Exemplo de Closure:
+
+def criar_saudacao(saudacao):
+    def saudar(nome):
+        return f"{saudacao}, {nome}!"
+    return saudar
+
+# Criando uma closure
+saudar_ola = criar_saudacao("Olá")
+print(saudar_ola("Maria"))  # Saída: Olá, Maria!
+
+saudar_bom_dia = criar_saudacao("Bom dia")
+print(saudar_bom_dia("João"))  # Saída: Bom dia, João!
+
+Nesse exemplo, saudar é uma closure porque retém o valor de saudacao mesmo após criar_saudacao 
+ter sido executada.
+
+
+- Benefícios e Aplicações:
+
+Manter Estado: Closures são usadas para manter um estado entre diferentes chamadas de função sem a 
+necessidade de usar variáveis globais.
+
+Encapsulamento: Permitem encapsular a lógica e dados em uma função, proporcionando um controle mais 
+restrito sobre as variáveis.
+
+Facilidade em Criar Funções Parametrizadas: Funções que retornam outras funções são úteis para criar 
+comportamentos parametrizados e fábricas de funções.
