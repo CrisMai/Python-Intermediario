@@ -1,0 +1,43 @@
+
+10 - Manipulando chaves e valores em dicionários
+
+Manipular chaves e valores em dicionários permite realizar operações complexas de forma eficiente. 
+Python fornece métodos como get(), update(), pop(), keys(), values(), e items() para simplificar 
+a manipulação de dados e facilitar a criação de scripts flexíveis e poderosos.
+
+* Acessando Chaves e Valores
+
+Acessar um valor por uma chave específica:
+dicionario = {"nome": "Alice", "idade": 30, "cidade": "São Paulo"}
+print(dicionario["nome"])  # Saída: Alice
+
+
+Usar get() para acessar valores: 
+O método get() é útil para acessar valores de maneira segura sem levantar um erro caso a chave não exista:
+
+print(dicionario.get("profissao", "Chave não encontrada"))  # Saída: Chave não encontrada
+
+
+* Adicionando e Atualizando Valores
+
+Adicionar um novo par chave-valor:
+dicionario["profissao"] = "Engenheira"
+
+Atualizar um valor existente:
+dicionario["idade"] = 31  # Atualiza o valor da chave 'idade' para 31
+
+Adicionar ou atualizar múltiplos pares com update():
+dicionario.update({"cidade": "Rio de Janeiro", "pais": "Brasil"})
+
+
+* Removendo Chaves e Valores
+
+Remover um par chave-valor com del:
+del dicionario["cidade"]  # Remove a chave 'cidade' e seu valor
+
+Remover e obter o valor removido com pop():
+idade = dicionario.pop("idade")
+print(idade)  # Saída: 31
+
+Remover todos os itens com clear():
+dicionario.clear()  # Deixa o dicionário vazio
